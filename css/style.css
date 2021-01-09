@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+@import url(bootstrap.css);
+.d-flex {
+  display: flex; }
+
+.main {
+  background-image: url("../images/bg-first_01.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; }
+  .main header {
+    padding-top: 31px; }
+    .main header nav {
+      display: flex; }
+      .main header nav ul li {
+        margin-left: 40px; }
+      .main header nav ul a {
+        font-family: "Asap", sans-serif;
+        font-weight: 400;
+        color: #4d4d4d;
+        font-size: 16px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0); }
+        .main header nav ul a:hover {
+          border-bottom: 2px solid #c8c8c8; }
+  .main h1 {
+    font-size: 90px;
+    font-family: "Asap", sans-serif;
+    font-weight: 700;
+    margin-top: 30%;
+    margin-bottom: 4px;
+    color: #4d4d4d; }
+  .main p {
+    font-family: "Asap", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 28px;
+    color: #909090; }
+  .main .btn {
+    font-size: 16px;
+    line-height: 1rem;
+    border-radius: 0;
+    color: #4d4d4d;
+    font-weight: 500;
+    border: 1px solid #4d4d4d;
+    padding: 19px 0 17px;
+    width: 160px;
+    margin-right: 20px; }
+    .main .btn:hover {
+      background-color: #fff;
+      color: #4d4d4d;
+      border: 1px solid #fff;
+      -webkit-box-shadow: 3px 3px 20px 0 #c8c8c8;
+      box-shadow: 3px 3px 20px 0 #c8c8c8; }
+
+.about {
+  padding: 110px 0 124px; }
+  .about h3 {
+    font-family: "Asap", sans-serif;
+    font-size: 46px;
+    color: #717171;
+    font-weight: 700;
+    letter-spacing: 10px;
+    margin: 69px 0 14px;
+    line-height: 50px; }
+    .about h3:before {
+      content: "";
+      display: block;
+      background-color: #717171;
+      width: 60px;
+      height: 4px;
+      margin-bottom: 19px; }
+  .about p {
+    font-family: "Asap", sans-serif;
+    font-weight: 400;
+    color: #4d4d4d;
+    font-size: 16px;
+    margin-bottom: 36px; }
+  .about .btn {
+    font-size: 16px;
+    line-height: 1rem;
+    border-radius: 0;
+    color: #4d4d4d;
+    font-weight: 500;
+    border: 1px solid #4d4d4d;
+    padding: 19px 0 17px;
+    width: 245px; }
+    .about .btn:hover {
+      background-color: #fff;
+      color: #4d4d4d;
+      border: 1px solid #fff;
+      -webkit-box-shadow: 3px 3px 20px 0 #c8c8c8;
+      box-shadow: 3px 3px 20px 0 #c8c8c8; }
+
+.servises {
+  background-color: #f6f6f6;
+  padding: 119px 0 144px; }
+  .servises h3 {
+    font-family: "Asap", sans-serif;
+    font-size: 46px;
+    color: #717171;
+    font-weight: 700;
+    letter-spacing: 10px;
+    margin: 69px 0 14px;
+    line-height: 50px; }
+    .servises h3:before {
+      content: "";
+      display: block;
+      background-color: #717171;
+      width: 60px;
+      height: 4px;
+      margin: 0 auto 19px; }
+  .servises .row {
+    font-family: "Asap", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #4d4d4d;
+    margin-bottom: 16px; }
+    .servises .row .top {
+      margin-bottom: 79px; }
+    .servises .row img {
+      display: block;
+      margin: 0 auto 0; }
+
+.skills h3 {
+  font-family: "Asap", sans-serif;
+  font-size: 46px;
+  color: #717171;
+  font-weight: 700;
+  letter-spacing: 10px;
+  margin: 69px 0 14px;
+  line-height: 50px; }
+  .skills h3:before {
+    content: "";
+    display: block;
+    background-color: #717171;
+    width: 60px;
+    height: 4px;
+    margin: 0 auto 19px; }
+
+/*# sourceMappingURL=style.css.map */
