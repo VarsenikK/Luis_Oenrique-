@@ -172,9 +172,19 @@ $font-family-main: 'Asap', sans-serif;
 }
 
 .skills{
+  padding: 117px 0 127px;
+  .numbers{
+    margin-top: -12px;
+    padding-left: 30px;
+    p{
+      margin-bottom: 48px;
+    }
+  }
+
+
   h3 {
     @include h3;
-    margin: 69px 0 14px;
+    margin-bottom: 62px;
     line-height: 50px;
 
     &:before {
@@ -186,5 +196,36 @@ $font-family-main: 'Asap', sans-serif;
       height: 4px;
       margin: 0 auto 19px;
     }
+  }
+  .graph{
+    -webkit-box-shadow: 3px 3px 20px 0 #c8c8c8;
+    box-shadow: 3px 3px 20px 0 #c8c8c8;
+    margin-bottom: 15px;
+  }
+  .d-flex{
+    max-width: 680px;
+    margin: auto;
+  }
+}
+.portfolio{
+  padding: 126px 123px;
+  background-color: #f6f6f6;
+  h3 {
+    @include h3;
+    margin-bottom: 62px;
+    line-height: 50px;
+
+    &:before {
+      content: "";
+      display: block;
+
+      background-color: #717171;
+      width: 60px;
+      height: 4px;
+      margin: 0 auto 19px;
+    }
+  }
+  .isotope-item{
+    margin-bottom: 30px;
   }
 }

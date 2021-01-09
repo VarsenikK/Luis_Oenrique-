@@ -121,20 +121,55 @@
       display: block;
       margin: 0 auto 0; }
 
-.skills h3 {
-  font-family: "Asap", sans-serif;
-  font-size: 46px;
-  color: #717171;
-  font-weight: 700;
-  letter-spacing: 10px;
-  margin: 69px 0 14px;
-  line-height: 50px; }
-  .skills h3:before {
-    content: "";
-    display: block;
-    background-color: #717171;
-    width: 60px;
-    height: 4px;
-    margin: 0 auto 19px; }
+.skills {
+  padding: 117px 0 127px; }
+  .skills .numbers {
+    margin-top: -12px;
+    padding-left: 30px; }
+    .skills .numbers p {
+      margin-bottom: 48px; }
+  .skills h3 {
+    font-family: "Asap", sans-serif;
+    font-size: 46px;
+    color: #717171;
+    font-weight: 700;
+    letter-spacing: 10px;
+    margin-bottom: 62px;
+    line-height: 50px; }
+    .skills h3:before {
+      content: "";
+      display: block;
+      background-color: #717171;
+      width: 60px;
+      height: 4px;
+      margin: 0 auto 19px; }
+  .skills .graph {
+    -webkit-box-shadow: 3px 3px 20px 0 #c8c8c8;
+    box-shadow: 3px 3px 20px 0 #c8c8c8;
+    margin-bottom: 15px; }
+  .skills .d-flex {
+    max-width: 680px;
+    margin: auto; }
+
+.portfolio {
+  padding: 126px 123px;
+  background-color: #f6f6f6; }
+  .portfolio h3 {
+    font-family: "Asap", sans-serif;
+    font-size: 46px;
+    color: #717171;
+    font-weight: 700;
+    letter-spacing: 10px;
+    margin-bottom: 62px;
+    line-height: 50px; }
+    .portfolio h3:before {
+      content: "";
+      display: block;
+      background-color: #717171;
+      width: 60px;
+      height: 4px;
+      margin: 0 auto 19px; }
+  .portfolio .isotope-item {
+    margin-bottom: 30px; }
 
 /*# sourceMappingURL=style.css.map */
