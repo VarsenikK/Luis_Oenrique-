@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,700;1,400&display=swap");
 @import url(bootstrap.css);
+@import url(owl.carousel.css);
+@import url(owl.theme.default.css);
 .d-flex {
   display: flex; }
 
@@ -10,16 +12,25 @@
   height: 100vh; }
   .main header {
     padding-top: 31px; }
+    @media screen and (max-width: 767px) {
+      .main header .navbar-brand {
+        padding-left: 15px; } }
     .main header nav {
       display: flex; }
+      .main header nav .navbar-toggler {
+        outline: none; }
       .main header nav ul li {
         margin-left: 40px; }
+        @media screen and (max-width: 960px) {
+          .main header nav ul li {
+            margin-left: 0; } }
       .main header nav ul a {
         font-family: "Asap", sans-serif;
         font-weight: 400;
         color: #4d4d4d;
         font-size: 16px;
-        border-bottom: 2px solid rgba(0, 0, 0, 0); }
+        border-bottom: 2px solid rgba(0, 0, 0, 0);
+        transition: 0.3s; }
         .main header nav ul a:hover {
           border-bottom: 2px solid #c8c8c8; }
   .main h1 {
@@ -29,6 +40,10 @@
     margin-top: 30%;
     margin-bottom: 4px;
     color: #4d4d4d; }
+    @media screen and (max-width: 420px) {
+      .main h1 {
+        font-size: 70px;
+        margin-top: 25%; } }
   .main p {
     font-family: "Asap", sans-serif;
     font-weight: 400;
@@ -44,13 +59,17 @@
     border: 1px solid #4d4d4d;
     padding: 19px 0 17px;
     width: 160px;
-    margin-right: 20px; }
+    margin-right: 20px;
+    transition: 0.3s; }
     .main .btn:hover {
       background-color: #fff;
       color: #4d4d4d;
       border: 1px solid #fff;
       -webkit-box-shadow: 3px 3px 20px 0 #c8c8c8;
       box-shadow: 3px 3px 20px 0 #c8c8c8; }
+    @media screen and (max-width: 420px) {
+      .main .btn {
+        margin-bottom: 15px; } }
 
 .about {
   padding: 110px 0 124px; }
@@ -83,7 +102,8 @@
     font-weight: 500;
     border: 1px solid #4d4d4d;
     padding: 19px 0 17px;
-    width: 245px; }
+    width: 245px;
+    transition: 0.3s; }
     .about .btn:hover {
       background-color: #fff;
       color: #4d4d4d;
@@ -117,15 +137,17 @@
     margin-bottom: 16px; }
     .servises .row .top {
       margin-bottom: 79px; }
-    .servises .row img {
+    .servises .row a img {
       display: block;
-      margin: 0 auto 0; }
+      margin: 0 auto 0;
+      transition: 0.3s; }
+      .servises .row a img:hover {
+        transform: scale(1.1); }
 
 .skills {
-  padding: 117px 0 127px; }
+  padding-top: 117px; }
   .skills .numbers {
-    margin-top: -12px;
-    padding-left: 30px; }
+    margin-top: -12px; }
     .skills .numbers p {
       margin-bottom: 48px; }
   .skills h3 {
@@ -134,7 +156,7 @@
     color: #717171;
     font-weight: 700;
     letter-spacing: 10px;
-    margin-bottom: 62px;
+    margin-bottom: 0;
     line-height: 50px; }
     .skills h3:before {
       content: "";
@@ -144,12 +166,16 @@
       height: 4px;
       margin: 0 auto 19px; }
   .skills .graph {
+    display: block;
+    width: 100%;
     -webkit-box-shadow: 3px 3px 20px 0 #c8c8c8;
     box-shadow: 3px 3px 20px 0 #c8c8c8;
     margin-bottom: 15px; }
   .skills .d-flex {
-    max-width: 680px;
+    max-width: 900px;
     margin: auto; }
+    .skills .d-flex img {
+      margin-left: 28px; }
 
 .portfolio {
   padding: 126px 123px;
@@ -171,5 +197,149 @@
       margin: 0 auto 19px; }
   .portfolio .isotope-item {
     margin-bottom: 30px; }
+  .portfolio .btn {
+    width: 190px;
+    font-size: 16px;
+    line-height: 1rem;
+    border-radius: 0;
+    color: #4d4d4d;
+    font-weight: 500;
+    border: 1px solid #4d4d4d;
+    padding: 19px 0 17px;
+    outline: none;
+    transition: 0.3s; }
+    .portfolio .btn:hover {
+      background-color: #fff;
+      color: #4d4d4d;
+      border: 1px solid #fff;
+      -webkit-box-shadow: 3px 3px 20px 0 #c8c8c8;
+      box-shadow: 3px 3px 20px 0 #c8c8c8; }
+
+.testimonials {
+  padding: 126px 0 122px; }
+  .testimonials h3 {
+    font-family: "Asap", sans-serif;
+    font-size: 46px;
+    color: #717171;
+    font-weight: 700;
+    letter-spacing: 10px;
+    margin-bottom: 58px;
+    line-height: 50px; }
+    .testimonials h3:before {
+      content: "";
+      display: block;
+      background-color: #717171;
+      width: 60px;
+      height: 4px;
+      margin: 0 auto 19px; }
+  .testimonials .owl-carousel {
+    border: 1px solid #000;
+    padding: 81px 57px 38px 120px; }
+    .testimonials .owl-carousel .owl-dots {
+      text-align: center; }
+      .testimonials .owl-carousel .owl-dots .owl-dot {
+        outline: none; }
+        .testimonials .owl-carousel .owl-dots .owl-dot span {
+          display: inline-block;
+          width: 13px;
+          height: 13px;
+          border: 1px solid #000;
+          background-color: #fff;
+          margin: 2px; }
+        .testimonials .owl-carousel .owl-dots .owl-dot.active span {
+          background-color: #000; }
+    .testimonials .owl-carousel .item {
+      margin-bottom: 56px; }
+      .testimonials .owl-carousel .item img {
+        display: block;
+        max-width: 159px;
+        margin-right: 31px; }
+      .testimonials .owl-carousel .item h4 {
+        font-family: "Asap", sans-serif;
+        font-weight: 600;
+        font-size: 30px;
+        color: #373737;
+        text-transform: uppercase; }
+      .testimonials .owl-carousel .item h6 {
+        color: #373737;
+        font-family: "Asap", sans-serif;
+        font-style: italic;
+        text-transform: uppercase;
+        font-size: 12px; }
+      .testimonials .owl-carousel .item p {
+        font-size: 16px;
+        color: #919191;
+        font-family: "Asap", sans-serif;
+        font-weight: 500; }
+
+.num {
+  background-color: #f6f6f6;
+  padding: 52px 0 65px;
+  margin-bottom: 154px; }
+  .num a img {
+    display: block;
+    margin: 0 auto 31px;
+    transition: 0.3s; }
+    .num a img:hover {
+      transform: scale(1.1); }
+
+.bottom {
+  background-image: url("../images/bg-footer_02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 145px 0 38px; }
+  .bottom h3 {
+    font-family: "Asap", sans-serif;
+    font-size: 46px;
+    color: #717171;
+    font-weight: 700;
+    letter-spacing: 10px;
+    margin: 69px 0 71px;
+    line-height: 50px;
+    color: #fff; }
+    .bottom h3:before {
+      content: "";
+      display: block;
+      background-color: #fff;
+      width: 60px;
+      height: 4px;
+      margin: 0 auto 19px; }
+  .bottom .form-control {
+    border: none;
+    border-radius: 0;
+    padding: 23px 0 22px 10px;
+    outline: none;
+    margin-bottom: 29px; }
+    .bottom .form-control input {
+      max-width: 370px; }
+  .bottom textarea {
+    resize: none;
+    height: 207px; }
+  .bottom .btn {
+    font-size: 16px;
+    line-height: 1rem;
+    border-radius: 0;
+    color: #4d4d4d;
+    font-weight: 500;
+    border: 1px solid #4d4d4d;
+    padding: 19px 0 17px;
+    background-color: #fff;
+    color: #4d4d4d;
+    font-size: 16px;
+    padding: 20px 0 18px;
+    width: 123px;
+    border: none;
+    border-radius: 0;
+    font-family: "Asap", sans-serif;
+    font-weight: 600;
+    outline: none;
+    transition: 0.3s; }
+    .bottom .btn:after {
+      content: "\f105";
+      font-weight: 900;
+      font-family: "Font Awesome 5 Free"; }
+    .bottom .btn:hover {
+      -webkit-box-shadow: 3px 3px 20px 0 #c8c8c8;
+      box-shadow: 3px 3px 20px 0 #c8c8c8; }
 
 /*# sourceMappingURL=style.css.map */
